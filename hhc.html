@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hide HTML Code (HHC)</title>
+    </head>
+    <body>
+        <script>
+        <!--
+            function hide_code(text)
+            {
+                ret = "";
+                for (var n = 0, l = text.length; n < l; n++) 
+                {
+                    var hex = Number(text.charCodeAt(n)).toString(16).toUpperCase();
+                    ret += "%" + hex;
+                }
+                return ret;
+            }
+        -->
+        </script>
+        <h2>Hide HTML Code (HHC)</h2>
+        This simple tool converts text or script to hex code in HTML syntax, so that it can be embedded in URLs.
+        
+        <br /><br />
+        
+        <form action="#">
+            <textarea rows='5' cols='100' id='inpt'></textarea><br />
+            <input type='submit' value='Convert!' onClick='document.getElementById("outp").value = hide_code(document.getElementById("inpt").value);'/>
+            <input type='button' value='Clear' onClick='document.getElementById("outp").value = ""; document.getElementById("inpt").value = "";'/>
+            <br />
+            <br />
+            Code:<br />
+            <textarea rows='5' cols='100' id='outp'></textarea><br />
+            
+        </form>
+    </body>
+</html> 
