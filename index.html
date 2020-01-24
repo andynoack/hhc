@@ -1,13 +1,11 @@
 <html>
     <body>
         <script src='text2hex.js'></script>
-        <form action="#">
-            <textarea rows='5' cols='100' id='inpt'></textarea><br />
-            <input type='submit' value='Convert!' onClick='document.getElementById("outp").value = text2hex((document.getElementById("inpt").value);'/>
-            <input type='button' value='Clear' onClick='document.getElementById("outp").value = ""; document.getElementById("inpt").value = "";'/>
-            <br />
-            <br />
-            <textarea rows='5' cols='100' id='outp'></textarea><br />
-        </form>
+        <textarea rows='5' cols='100' id='inpt'></textarea><br />
+        <input type='submit' value='Convert!' onClick='document.getElementById("outp").value = text2hex(document.getElementById("inpt").value);'/>
+        <input type='button' value='Clear' onClick='document.getElementById("outp").value = ""; document.getElementById("inpt").value = "";'/>
+        <br />
+        <br />
+        <textarea rows='5' cols='100' id='outp'></textarea><br />
     </body>
 </html> 
