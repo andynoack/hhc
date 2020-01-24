@@ -1,23 +1,12 @@
 <html>
     <body>
-        <script>
-            function text2hex(text) {
-                ret = "";
-                for (var n = 0, l = text.length; n < l; n++) 
-                {
-                    var hex = Number(text.charCodeAt(n)).toString(16).toUpperCase();
-                    ret += hex;
-                }
-                return ret;
-            }
-        </script>
+        <script src='text2hex.js'></script>
         <form action="#">
             <textarea rows='5' cols='100' id='inpt'></textarea><br />
             <input type='submit' value='Convert!' onClick='document.getElementById("outp").value = text2hex((document.getElementById("inpt").value);'/>
             <input type='button' value='Clear' onClick='document.getElementById("outp").value = ""; document.getElementById("inpt").value = "";'/>
             <br />
             <br />
-            Code:<br />
             <textarea rows='5' cols='100' id='outp'></textarea><br />
         </form>
     </body>
