@@ -2,8 +2,8 @@
     <body>
         <script src='text2hex.js'></script>
         <textarea rows='5' cols='100' id='inpt'></textarea><br />
-        <button value='Convert!' onClick='document.getElementById("outp").value = text2hex(document.getElementById("inpt").value);'></button>
-        <button value='Clear' onClick='document.getElementById("outp").value = ""; document.getElementById("inpt").value = "";'></button>
+        <button onChange='document.getElementById("outp").value = text2hex(document.getElementById("inpt").value);'>Convert!</button>
+        <button onChange='document.getElementById("outp").value = ""; document.getElementById("inpt").value = "";'>Clear</button>
         <br />
         <br />
         <textarea rows='5' cols='100' id='outp'></textarea><br />
