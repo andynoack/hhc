@@ -2,10 +2,11 @@
     <body>
         <script src='text2hex.js'></script>
         <textarea rows='5' cols='100' id='inpt'></textarea><br />
-        <button onChange='document.getElementById("outp").value = text2hex(document.getElementById("inpt").value);'>Convert!</button>
-        <button onChange='document.getElementById("outp").value = ""; document.getElementById("inpt").value = "";'>Clear</button>
+        <button onClick='document.getElementById("outp").innerText = text2hex(document.getElementById("inpt").value, "c");'>Convert!</button>
+        <button onClick='document.getElementById("outp").innerText = text2hex(document.getElementById("inpt").value, "r");'>Revert!</button>
+        <button onClick='document.getElementById("outp").innerText = ""; document.getElementById("inpt").value = "";'>Clear</button>
         <br />
         <br />
-        <textarea rows='5' cols='100' id='outp'></textarea><br />
+        <p rows='5' cols='100' id='outp'></p>
     </body>
 </html> 
